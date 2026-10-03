@@ -1,3 +1,3 @@
-// Server-only environment for Render. Without a durable quota database,
-// reportConfigured stays false even if a provider key is accidentally set.
+// Server-only environment for Render. Report quotas fall back to bounded RAM
+// counters on the single free instance when no durable database is configured.
 export const env = process.env;

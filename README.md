@@ -35,11 +35,11 @@ Der Test ist **wissenschaftlich nicht validiert**. Er stellt keine Diagnose und 
 
 ## KI-Berichte
 
-Die sichtbare Einordnung entsteht aus festen Regeln. Der KI-Bericht bleibt ohne tatsächlich konfigurierten Anbieter deaktiviert. Ein Render-API-Schlüssel ist ausschließlich ein Hosting-Zugang und kein KI-Anbieterzugang. Deployment-Zugangsdaten gehören weder in diesen Quellstand noch in Browservariablen.
+Die sichtbare Einordnung entsteht aus festen Regeln. Der optionale KI-Bericht nutzt Google Gemini über die Generate Content API. Der Google-Schlüssel gehört ausschließlich als geheime Render-Umgebungsvariable auf den Server und niemals in diesen Quellstand oder in Browservariablen.
 
-Der vorbereitete Gateway-Vertrag und System-Prompt befinden sich in `lib/report.ts`: ein serverseitiger POST mit `system_prompt` und `input` erhält `{ "report": "…" }` zurück. Vor einer Übertragung ist die ausdrückliche Freigabe im Browser erforderlich. Anbieterinformationen, URL und Secret sowie eine dauerhafte Quotendatenbank müssen eingerichtet und geprüft sein, bevor die Berichtsfunktion aktiviert wird.
+Antworten, freiwillige Kontextangaben und Profilwerte werden erst übertragen, wenn die erwachsene Testperson die gesonderte Freigabe markiert und den Bericht anfordert. Der Prompt und die Auswertung befinden sich in `lib/report.ts`; Berichte enthalten keine klinische Diagnose. Google kann die Angaben nach den für den verwendeten AI-Studio-Schlüssel geltenden Bedingungen verarbeiten. Nutzungslimits oder mögliche Gebühren richten sich nach dem Google-Konto und dessen aktuellem Tarif.
 
-Die Cloudflare-Variante unterstützt die D1-Bindung `DB`. Die Render-Variante liefert derzeit nur Server-Umgebungsvariablen und keine Quotendatenbank; deshalb bleibt die Berichtsfunktion dort auch bei versehentlich gesetztem Anbieter-Schlüssel gesperrt. Das Bereitstellen einer geeigneten dauerhaften Quotendatenbank gehört zur späteren KI-Anbindung. Es werden keine Antworten oder Berichtstexte protokolliert oder serverseitig gespeichert.
+Die Cloudflare-Variante unterstützt die D1-Bindung `DB`. Auf dem einzelnen Render-Free-Server begrenzen flüchtige Speicherzähler die Nutzung auf drei Berichte pro Besucher und Stunde sowie 100 insgesamt pro Tag; ein Serverneustart setzt diese Zähler zurück. Sobald D1 vorhanden ist, werden die dauerhaften Datenbankzähler verwendet. Antworten und Berichtstexte werden nicht protokolliert oder serverseitig gespeichert.
 
 ## Prüfungen
 

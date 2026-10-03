@@ -7,10 +7,10 @@ Bei der Knopf-Situation ist die Attraktivität von Geld von Freude am Tod selbst
 Beschreibe Intensität als Antwortstärke und Konsistenz als Übereinstimmung innerhalb dieses Durchlaufs. Die Situationen unterscheiden sich; Differenzen können durch Kontext erklärt werden. Innere Konsistenz belegt weder Ehrlichkeit, diagnostische Sicherheit noch zeitliche Stabilität. Fehlende Antworten bleiben fehlend. Werte von Bereichen mit weniger als drei Antworten dürfen nicht als Bereichswert interpretiert werden.
 Schreibe persönlich, emotional treffend, differenziert und auch unbequem, wenn die Antworten das tragen. Keine Beschämung, Entmenschlichung, Schmeichelei, dramatischen Identitätsurteile oder Barnum-Sätze. Benenne Selbstkontrolle, Fürsorge und Verantwortung anhand tatsächlicher Belege. Ziehe keine Schlüsse aus der Bearbeitungsgeschwindigkeit.
 Gliedere den Bericht in: Gesamtmuster; Nähe, Anerkennung und Macht; Gefühl, Motiv und Handlung; vorsichtige Begriffsbezüge; Gegenbeispiele und Stärken; Grenzen und zwei konkrete Beobachtungsfragen für den Alltag. Keine Behandlungsempfehlungen aus diesem Selbsttest ableiten. Gib den Bericht als normalen Text mit kurzen Absatzüberschriften zurück, ohne HTML, Codeblöcke oder JSON im Bericht selbst.`;
-export type ReportEnv={DB?:D1Database;REPORT_ENABLED?:string;REPORT_API_URL?:string;REPORT_API_KEY?:string;REPORT_PROVIDER_LABEL?:string;REPORT_QUOTA_SECRET?:string;REPORT_LOCAL_MOCK?:string};
+export type ReportEnv={DB?:D1Database;REPORT_ENABLED?:string;REPORT_PROVIDER?:string;REPORT_API_URL?:string;REPORT_API_KEY?:string;REPORT_PROVIDER_LABEL?:string;REPORT_QUOTA_SECRET?:string;REPORT_QUOTA_MODE?:string;REPORT_LOCAL_MOCK?:string};
 const response=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 function endpoint(env:ReportEnv){try{const u=new URL(env.REPORT_API_URL??'');const local=env.REPORT_LOCAL_MOCK==='true'&&['127.0.0.1','localhost'].includes(u.hostname);return u.protocol==='https:'||local?u.href:null;}catch{return null;}}
-export function reportConfigured(env:ReportEnv){return env.REPORT_ENABLED==='true'&&!!endpoint(env)&&!!env.REPORT_API_KEY&&!!env.REPORT_QUOTA_SECRET&&!!env.DB;}
+export function reportConfigured(env:ReportEnv){return env.REPORT_ENABLED==='true'&&!!endpoint(env)&&!!env.REPORT_API_KEY&&!!env.REPORT_QUOTA_SECRET&&!!(env.DB||env.REPORT_QUOTA_MODE==='memory');}
 export function reportStatus(env:ReportEnv){return response({configured:reportConfigured(env),providerLabel:reportConfigured(env)?(env.REPORT_PROVIDER_LABEL??'der konfigurierte KI-Dienst').slice(0,100):undefined});}
 export async function readLimited(request:Request|Response,maxBytes:number){
  if(Number(request.headers.get('content-length')??0)>maxBytes)throw new Error('body_limit');
@@ -29,6 +29,20 @@ async function takeQuota(env:ReportEnv,request:Request){
  await db.prepare('DELETE FROM report_quota WHERE expires_at < ?').bind(now).run();
  return !!individual;
 }
+const memoryQuota=new Map<string,{used:number;expiresAt:number}>();
+async function takeMemoryQuota(env:ReportEnv,request:Request){
+ const now=Date.now(),day=Math.floor(now/86400000),hour=Math.floor(now/3600000);
+ const forwarded=request.headers.get('cf-connecting-ip')??request.headers.get('x-forwarded-for')?.split(',').at(-1)?.trim()??'local';
+ const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(`${env.REPORT_QUOTA_SECRET}:${forwarded}:${hour}`));
+ const hash=Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,'0')).join('');
+ if(memoryQuota.size>=12000)for(const [key,value] of memoryQuota)if(value.expiresAt<now)memoryQuota.delete(key);
+ const globalKey=`global:${day}`,visitorKey=`visitor:${hash}`;
+ const global=memoryQuota.get(globalKey),visitor=memoryQuota.get(visitorKey);
+ if((global?.used??0)>=100||(visitor?.used??0)>=3||memoryQuota.size>=12000)return false;
+ memoryQuota.set(globalKey,{used:(global?.used??0)+1,expiresAt:(day+1)*86400000});
+ memoryQuota.set(visitorKey,{used:(visitor?.used??0)+1,expiresAt:(hour+1)*3600000});
+ return true;
+}
 export function validateReport(report:unknown){
  if(typeof report!=='string')throw new Error('report_format');const text=report.trim();const words=text.split(/\s+/).filter(Boolean).length;
  if(words<1200||words>1800||text.length>30000)throw new Error('report_length');
@@ -43,11 +57,18 @@ export async function handleReport(request:Request,env:ReportEnv,providerFetch:t
  if(!payload.adult)return response({error:'Dieser Test ist für Erwachsene vorgesehen.'},400);
  if(calculateProfile(payload.answers).every(t=>t.score===null))return response({error:'Für einen Bericht sind in mindestens einem Bereich drei Skalenantworten erforderlich.'},422);
  if(!reportConfigured(env))return response({error:'Es ist noch kein KI-Dienst verbunden. Dein Antwortprofil bleibt verfügbar.'},503);
- try{if(!await takeQuota(env,request))return response({error:'Das Aufruflimit wurde erreicht. Bitte versuche es später erneut. Dein Antwortprofil bleibt erhalten.'},429);}catch{return response({error:'Die Berichtserstellung ist vorübergehend nicht verfügbar.'},503);}
+ try{const allowed=env.DB?await takeQuota(env,request):env.REPORT_QUOTA_MODE==='memory'?await takeMemoryQuota(env,request):false;if(!allowed)return response({error:'Das Aufruflimit wurde erreicht. Bitte versuche es später erneut. Dein Antwortprofil bleibt erhalten.'},429);}catch{return response({error:'Die Berichtserstellung ist vorübergehend nicht verfügbar.'},503);}
  try{
-  const upstream=await providerFetch(endpoint(env)!,{method:'POST',headers:{'Content-Type':'application/json','Authorization':`Bearer ${env.REPORT_API_KEY}`},body:JSON.stringify({system_prompt:SYSTEM_PROMPT,input:buildReportInput(payload)}),signal:AbortSignal.timeout(60000),redirect:'error'});
+  const gemini=env.REPORT_PROVIDER==='gemini';
+  const headers:Record<string,string>={'Content-Type':'application/json'};
+  if(gemini)headers['x-goog-api-key']=env.REPORT_API_KEY!;else headers.Authorization=`Bearer ${env.REPORT_API_KEY}`;
+  const input=buildReportInput(payload);
+  const requestBody=gemini?{systemInstruction:{parts:[{text:SYSTEM_PROMPT}]},contents:[{role:'user',parts:[{text:JSON.stringify(input)}]}],generationConfig:{maxOutputTokens:8192}}:{system_prompt:SYSTEM_PROMPT,input};
+  const upstream=await providerFetch(endpoint(env)!,{method:'POST',headers,body:JSON.stringify(requestBody),signal:AbortSignal.timeout(60000),redirect:'error'});
   if(!upstream.ok)return response({error:'Der KI-Dienst konnte den Bericht derzeit nicht erstellen.'},502);
-  const result=JSON.parse(await readLimited(upstream,200000)) as {report?:unknown};const report=validateReport(result.report);
+  const result=JSON.parse(await readLimited(upstream,200000)) as {report?:unknown;candidates?:Array<{content?:{parts?:Array<{text?:unknown}>}}>};
+  const reportText=gemini?result.candidates?.[0]?.content?.parts?.map(part=>typeof part.text==='string'?part.text:'').join('\n'):result.report;
+  const report=validateReport(reportText);
   return response({report});
  }catch{return response({error:'Der KI-Dienst hat keinen vollständigen Bericht im vereinbarten Format geliefert. Deine Antworten bleiben erhalten.'},502);}
 }
