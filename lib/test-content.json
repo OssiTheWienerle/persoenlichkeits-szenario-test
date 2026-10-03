@@ -1,0 +1,1077 @@
+[
+  {
+    "id": 1,
+    "title": "Die letzte Bahn nach Hause",
+    "length": "kurz",
+    "paragraphs": [
+      "Es ist Freitag, kurz nach 22 Uhr. Du stehst am Bahnhof und willst nach einer langen Arbeitswoche nach Hause. In zwölf Minuten fährt deine letzte direkte Bahn. Auf einer Bank sitzt Ingrid, 68, die im selben Haus wie du wohnt. Ihr grüßt euch normalerweise nur im Treppenhaus. Sie hält ihr Handy mit beiden Händen und sagt, sie finde die Nummer ihres Sohnes nicht. Ihre Ersatzverbindung ist ausgefallen; sie kennt diesen Bahnhof kaum.",
+      "Ingrid fragt, ob du mit ihr zum Taxistand auf der anderen Seite des Bahnhofs gehen und beim Anrufen helfen könntest. Das dauert voraussichtlich zwanzig Minuten. Danach wäre deine Bahn weg, und du müsstest selbst ein Taxi für etwa 40 Euro nehmen. Sie hat Geld für ihre eigene Fahrt, wirkt aber unsicher und überfordert. Weitere Reisende sind noch unterwegs; keiner hat das Gespräch bisher mitbekommen."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Bei Ingrid bleiben, sie zum Taxistand begleiten und meine eigene Taxifahrt bezahlen."
+      },
+      {
+        "id": "a2",
+        "text": "Mit ihr eine andere Person am Bahnhof ansprechen und dann meine Bahn nehmen."
+      },
+      {
+        "id": "a3",
+        "text": "Nur bis kurz vor der Abfahrt helfen und dann gehen, auch wenn noch nichts geklärt ist."
+      },
+      {
+        "id": "a4",
+        "text": "Mit ihr vereinbaren, dass sie mein Taxi bezahlt, bevor ich mich weiter kümmere."
+      },
+      {
+        "id": "a5",
+        "text": "Sagen, dass ich meine Bahn erreichen muss, und direkt zum Gleis gehen."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ingrid soll sich in dieser Situation nicht allein gelassen fühlen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte helfen, ohne selbst Geld und viel Zeit zu verlieren."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte möglichst schnell aus der unangenehmen Entscheidung heraus."
+      },
+      {
+        "id": "m4",
+        "text": "Wenn ich etwas für sie tue, möchte ich eine Gegenleistung erhalten."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "E",
+        "question": "Wie stark berührt dich Ingrids sichtbare Unsicherheit?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "I",
+        "question": "Wie stark wäre dein Impuls, sofort zu handeln, bevor du die Möglichkeiten abgewogen hast?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "M",
+        "question": "Wie verlockend wäre es, Ingrids Unsicherheit für eine für dich günstigere Vereinbarung zu nutzen?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Der Kratzer am geliehenen Auto",
+    "length": "mittel",
+    "paragraphs": [
+      "Dein Cousin Tarek, 29, hat dir am Samstag sein Auto geliehen. Er arbeitet als Mechatroniker, spart gerade für eine neue Wohnung und geht normalerweise sorgfältig mit seinen Sachen um. Du wolltest damit Möbel abholen. Beim Ausparken streifst du eine niedrige Betonbegrenzung. An der Beifahrertür bleibt ein langer Kratzer. Eine Werkstatt schätzt die Reparatur auf etwa 350 Euro.",
+      "Am Abend stellst du das Auto vor Tareks Haus ab. Er fragt freundlich, ob mit der Abholung alles geklappt hat, und muss gleich zur Nachtschicht. Den Kratzer hat er noch nicht gesehen. Du weißt nicht, wann er ihn bemerken würde. Tarek hat dir schon öfter unkompliziert geholfen, aber noch nie Geld für einen Schaden von dir verlangt.",
+      "Du hast 400 Euro für ein Festival im nächsten Monat zurückgelegt. Wenn du die Reparatur vollständig bezahlst, kannst du dort voraussichtlich nicht mitfahren. Wenn du schweigst, müsste Tarek zunächst selbst klären, wann der Schaden entstanden ist. Du kannst auch offen mit ihm darüber sprechen, wie und wann du die Kosten übernehmen könntest."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Den Kratzer sofort ansprechen und die Reparatur bezahlen, auch wenn ich das Festival absagen muss."
+      },
+      {
+        "id": "a2",
+        "text": "Den Schaden ansprechen und Tarek um eine Ratenzahlung bitten."
+      },
+      {
+        "id": "a3",
+        "text": "Erst reagieren, wenn Tarek den Kratzer selbst anspricht."
+      },
+      {
+        "id": "a4",
+        "text": "Sagen, ich hätte den Kratzer erst nach dem Abstellen bemerkt und wüsste nicht, woher er kommt."
+      },
+      {
+        "id": "a5",
+        "text": "Den Schaden zugeben, aber erwarten, dass Tarek ihn als familiäre Gefälligkeit selbst bezahlt."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte für den Schaden einstehen, den ich verursacht habe."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte die Beziehung zu Tarek erhalten und eine machbare Lösung finden."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte das Festival und mein Geld möglichst nicht aufgeben."
+      },
+      {
+        "id": "m4",
+        "text": "In meiner Familie sollte man mir solche Fehler ohne Forderungen nachsehen."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "R",
+        "question": "Wie stark würdest du es bereuen, wenn Tarek wegen deines Schweigens die Reparatur selbst bezahlt?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "G",
+        "question": "Wie stark erwartest du, dass Tarek bei dir großzügiger sein sollte als bei anderen?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "K",
+        "question": "Wie wenig würden Tareks zusätzliche Ausgaben deine Entscheidung beeinflussen?",
+        "low": "sie würden sehr viel beeinflussen",
+        "high": "sie würden gar nichts beeinflussen"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Der freie Platz am Geburtstag",
+    "length": "lang",
+    "paragraphs": [
+      "Deine Freundin Mila wird 30. Ihr kennt euch seit acht Jahren, habt zusammen eine Ausbildung gemacht und euch auch in schwierigen Phasen oft angerufen. Für den Geburtstag hat sie einen Tisch in einem kleinen Restaurant reserviert. Du hast bei der Vorbereitung geholfen und bringst einen Kuchen mit, den du am Nachmittag selbst gebacken hast.",
+      "Als du ankommst, sitzen bereits zehn Personen am langen Tisch. Neben Mila sitzt Jana, eine neue Kollegin, die sie erst seit einigen Monaten kennt. Beide reden angeregt über eine Reise. Mila begrüßt dich, bedankt sich für den Kuchen und zeigt auf einen freien Platz am anderen Ende des Tisches. Dort sitzt außer dir nur Paul, ihr freundlicher, aber sehr ruhiger Nachbar, mit dem du bisher kaum gesprochen hast.",
+      "Du hattest angenommen, neben Mila zu sitzen. Eine feste Sitzordnung wurde vorher nicht besprochen. Als du sagst, dass du gern näher bei ihr sitzen würdest, antwortet Mila: „Lass uns nach dem Essen wechseln. Ich möchte gerade erst noch mit Jana reden.“ Ihre Stimme klingt normal. Niemand lacht über dich. Jana bekommt mit, dass du nach dem Platz gefragt hast, und rückt etwas zur Seite, wartet aber auf Milas Reaktion.",
+      "Das Essen wird in wenigen Minuten serviert. Du kannst bleiben, noch einmal nach einem sofortigen Wechsel fragen oder deutlich zeigen, dass du enttäuscht bist. Mila würde eine offene Bemerkung am ganzen Tisch hören. Du weißt nicht, ob sie deinen Platz absichtlich so gewählt hat oder einfach davon ausgegangen ist, dass ihr später miteinander redet."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Den Platz annehmen, mit Paul ins Gespräch kommen und später mit Mila reden."
+      },
+      {
+        "id": "a2",
+        "text": "Mila kurz unter vier Augen sagen, dass ich enttäuscht bin, und eine spätere Lösung vereinbaren."
+      },
+      {
+        "id": "a3",
+        "text": "Noch einmal vor allen auf einen sofortigen Platzwechsel bestehen."
+      },
+      {
+        "id": "a4",
+        "text": "Am Tisch sagen, dass Jana offenbar schon wichtiger ist als acht Jahre Freundschaft."
+      },
+      {
+        "id": "a5",
+        "text": "Meine Enttäuschung zunächst für mich behalten und das Restaurant früh verlassen."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte trotz meiner Enttäuschung einen guten Abend mit der Gruppe haben."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte, dass Mila meine Enttäuschung versteht."
+      },
+      {
+        "id": "m3",
+        "text": "Meine langjährige Rolle in ihrem Leben sollte mir diesen Platz sichern."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte nicht sichtbar weniger wichtig sein als Jana."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "G",
+        "question": "Wie stark findest du, dass dir der Platz neben Mila wegen eurer gemeinsamen Geschichte zusteht?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "V",
+        "question": "Wie stark würde diese Platzverteilung an deinem Gefühl nagen, für Mila wichtig zu sein?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "I",
+        "question": "Wie stark wäre der Impuls, noch am Tisch spontan eine scharfe Bemerkung zu machen?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Die Nachricht nach dem ersten Treffen",
+    "length": "mittel",
+    "paragraphs": [
+      "Du hast Lea, 28, über eine Dating-App kennengelernt. Ihr habt zwei Wochen lang täglich geschrieben und gestern zwei Stunden in einem Café verbracht. Du fandest das Treffen gut und hattest den Eindruck, dass es ihr ähnlich geht. Lea erzählte dir unter anderem, dass sie vor kurzem eine Prüfung nicht bestanden hat und sich deswegen schnell als Versagerin fühlt.",
+      "Am nächsten Nachmittag schreibt sie: „Danke für gestern. Ich fand das Gespräch schön, aber für mich ist keine romantische Verbindung entstanden. Ich möchte dir keine falschen Hoffnungen machen.“ Die Nachricht ist freundlich und eindeutig. Sie enthält keinen Vorschlag für ein weiteres Treffen.",
+      "Du bist zu Hause und hast die Nachricht gerade gelesen. Lea ist noch online. Du könntest ihre Entscheidung akzeptieren, nachfragen, sie von einem weiteren Treffen überzeugen oder auf das zurückgreifen, was sie dir über die Prüfung anvertraut hat. Bisher hat sie dich weder beleidigt noch bloßgestellt."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Mich für ihre Offenheit bedanken und die Entscheidung akzeptieren."
+      },
+      {
+        "id": "a2",
+        "text": "Einmal respektvoll nachfragen und eine erneute Absage akzeptieren."
+      },
+      {
+        "id": "a3",
+        "text": "Ihr schreiben, dass sie mir wenigstens ein zweites Treffen schuldet, nachdem wir so viel geschrieben haben."
+      },
+      {
+        "id": "a4",
+        "text": "Ihre Unsicherheit wegen der Prüfung ansprechen, um sie zum Umdenken zu bringen."
+      },
+      {
+        "id": "a5",
+        "text": "Ihr eine verletzende Antwort schicken, die auf ihre nicht bestandene Prüfung zielt."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte ihre Entscheidung respektieren und das Gespräch ordentlich beenden."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte verstehen, ob ich das Treffen anders wahrgenommen habe."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte die Ablehnung möglichst noch in eine Zusage verwandeln."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte, dass sie sich nach ihrer Absage ebenfalls schlecht fühlt."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "V",
+        "question": "Wie stark würde Leas Absage deinen Selbstwert treffen?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "M",
+        "question": "Wie bereit wärst du, ihre anvertraute Unsicherheit zu nutzen, um ein weiteres Treffen zu erreichen?",
+        "low": "gar nicht bereit",
+        "high": "sehr bereit"
+      },
+      {
+        "trait": "A",
+        "question": "Wie stark wäre der Wunsch, Lea für die Absage emotional zu verletzen?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Die Sprachnachricht in der Vereinsgruppe",
+    "length": "lang",
+    "paragraphs": [
+      "Du organisierst mit fünf anderen Erwachsenen das Sommerfest eines Sportvereins. Für den Aufbau am Samstag fehlen zwei Personen. Jonas, 25, hat zunächst zugesagt. Er ist seit einem Jahr im Verein, hilft normalerweise viel und ist eher zurückhaltend. In der Gruppe macht er sich selten wichtig; er entschuldigt sich oft schon für kleine Änderungen.",
+      "Am Donnerstagabend schickt Jonas dir privat eine Sprachnachricht. Sein Vater liegt seit dieser Woche im Krankenhaus. Jonas sagt mit stockender Stimme, dass er den Samstag bei seiner Familie verbringen möchte und den Aufbau nicht schafft. Er bittet dich, die Einzelheiten nicht in die Vereinsgruppe zu schreiben. Dort soll nur stehen, dass er aus persönlichen Gründen ausfällt.",
+      "Zwei andere Helfer haben bereits gesagt, dass sie einspringen könnten, wenn du sie direkt fragst. Dafür müsstest du die Aufgaben neu verteilen und etwa eine halbe Stunde länger planen. Du selbst wolltest am Freitagabend früh fertig sein und noch Freunde treffen. Jonas weiß von den Ersatzmöglichkeiten nichts. Er schreibt nach seiner Nachricht: „Wenn es wirklich gar nicht anders geht, versuche ich doch zu kommen.“",
+      "In der Vereinsgruppe wird Jonas manchmal wegen seiner entschuldigenden Art nachgeahmt. Du hast die Sprachnachricht auf deinem Handy. Du könntest seinen Ausfall sachlich weitergeben, ihn zu einer Zusage drängen oder die Nachricht ohne seine Erlaubnis teilen. Ein Weiterleiten könnte ihn vor den anderen unter Druck setzen und ihnen zugleich etwas zeigen, das er nur dir anvertraut hat."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Jonas den Ausfall bestätigen, nur die vereinbarte knappe Erklärung weitergeben und Ersatz organisieren."
+      },
+      {
+        "id": "a2",
+        "text": "Jonas offen fragen, ob ein kleiner Teil möglich ist, und seine Absage ohne weiteren Druck akzeptieren."
+      },
+      {
+        "id": "a3",
+        "text": "Ihm sagen, dass er alle hängen lässt, damit er trotz der Familiensituation kommt."
+      },
+      {
+        "id": "a4",
+        "text": "In der Gruppe persönliche Einzelheiten aus seiner Nachricht nennen, um ihn zur Zusage zu bewegen."
+      },
+      {
+        "id": "a5",
+        "text": "Die Sprachnachricht weiterleiten und einen spöttischen Kommentar dazu schreiben."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte Jonas in seiner familiären Situation entlasten."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte die Aufgaben verlässlich regeln, ohne mehr offenzulegen als nötig."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte meinen eigenen Plan retten und Jonas zum Kommen bringen."
+      },
+      {
+        "id": "m4",
+        "text": "Ich fände es befriedigend, wenn die Gruppe seine unsichere Art mitbekommt."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "M",
+        "question": "Wie bereit wärst du, Jonas mit Schuldgefühlen oder Gruppendruck zu einer Zusage zu bewegen?",
+        "low": "gar nicht bereit",
+        "high": "sehr bereit"
+      },
+      {
+        "trait": "K",
+        "question": "Wie wenig würden Jonas’ Vertrauensverlust und seine familiäre Belastung dein Vorgehen beeinflussen?",
+        "low": "sie würden sehr viel beeinflussen",
+        "high": "sie würden gar nichts beeinflussen"
+      },
+      {
+        "trait": "S",
+        "question": "Wie viel Befriedigung gäbe es dir, Jonas durch das Teilen der Nachricht beschämt zu sehen, unabhängig vom Aufbau?",
+        "low": "keine",
+        "high": "sehr viel"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Die Reklamation im Möbelhaus",
+    "length": "mittel",
+    "paragraphs": [
+      "Du hast einen Schreibtisch gekauft und dir für die Lieferung einen Vormittag freigenommen. Geliefert wurde die falsche Farbe. Nach zwei Telefonaten stehst du jetzt am Serviceschalter des Möbelhauses. Vor dir steht Anja, 34, mit einem Namensschild und einem Stapel Rücksendebelege. Sie war an der Lieferung nicht beteiligt.",
+      "Anja entschuldigt sich und bietet an, den richtigen Tisch in fünf Tagen zu liefern. Die Lieferkosten würden erstattet. Du brauchst den Tisch eigentlich schon am Montag. Als du nach einer schnelleren Lösung fragst, sagt sie: „Ich kann die Touren leider nicht selbst ändern. Ich kann die zuständige Person noch einmal anrufen.“ Ihr Ton ist ruhig. Hinter dir warten vier weitere Kunden.",
+      "Du bist müde und merkst, dass dich die Verzögerung ärgert. Auf dem Namensschild steht Anjas vollständiger Name. Du könntest mit ihr nach einer Lösung suchen, den Kauf rückgängig machen oder verlangen, dass ihre Leitung kommt. Du könntest auch Anja persönlich für das Problem verantwortlich machen. Sie hätte dann vor der Warteschlange zu reagieren, obwohl du nicht weißt, welchen Einfluss sie tatsächlich hatte."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Anja den Rückruf versuchen lassen und die angebotenen Möglichkeiten abwägen."
+      },
+      {
+        "id": "a2",
+        "text": "Sachlich um die Leitung bitten, um eine schnellere Lieferung oder Rückabwicklung zu klären."
+      },
+      {
+        "id": "a3",
+        "text": "Den Kauf rückgängig machen, ohne Anja persönlich anzugreifen."
+      },
+      {
+        "id": "a4",
+        "text": "Laut werden und Anja vor den Wartenden als unfähig bezeichnen."
+      },
+      {
+        "id": "a5",
+        "text": "Eine persönliche Beschwerde über Anja ankündigen, damit sie für meine Verzögerung Ärger bekommt."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte möglichst schnell einen brauchbaren Schreibtisch oder mein Geld zurück."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte klar für meine Interessen eintreten und sachlich bleiben."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte meinen Ärger sofort loswerden."
+      },
+      {
+        "id": "m4",
+        "text": "Jemand soll die Folgen der verschwendeten Zeit zu spüren bekommen."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "K",
+        "question": "Wie wenig würde es dich bei deiner Reaktion beeinflussen, wenn Anja dadurch persönlich unter Druck gerät?",
+        "low": "es würde sehr viel beeinflussen",
+        "high": "es würde gar nichts beeinflussen"
+      },
+      {
+        "trait": "I",
+        "question": "Wie stark wäre dein Impuls, sofort laut oder scharf zu reagieren?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "A",
+        "question": "Wie stark möchtest du, dass Anja persönlich Ärger bekommt, obwohl ihre Verantwortung nicht geklärt ist?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Das Turnier am Samstag",
+    "length": "lang",
+    "paragraphs": [
+      "Du spielst seit drei Jahren in einer Hobby-Volleyballmannschaft. Am Samstag verliert ihr knapp das Finale eines regionalen Turniers. Du hast im letzten Satz einen Aufschlag ins Aus gesetzt und eine Absprache überhört. Andere im Team haben ebenfalls Fehler gemacht. Die fünf Mitspieler sind Erwachsene; alle haben für diesen Tag trainiert und auf eigene Freizeitpläne verzichtet.",
+      "Nach dem Spiel steht Ben, 31, vor den anderen und sagt: „Das wäre leicht gewonnen gewesen, wenn du einmal zugehört hättest.“ Er ist häufig ehrgeizig und wird nach Niederlagen schnell laut, hat dich bisher aber nicht so direkt vor der Gruppe angegriffen. Zwei Mitspieler schauen weg. Eine andere sagt: „Es lag nicht an einer einzigen Person.“ Ben antwortet ihr nicht.",
+      "Auf deinem Handy liegt noch ein Foto vom Vormittag. Darauf ist zu sehen, dass Ben entgegen einer Turnierregel mit einem nicht angemeldeten Spieler über die Aufstellung gesprochen und ihn kurz eingesetzt hat. Du hast den Vorgang damals bemerkt und nichts gesagt. Nach den veröffentlichten Regeln könnte eine Meldung zum Ausschluss eures gesamten Teams und zum Verlust des zweiten Platzes führen. Ob die Turnierleitung tatsächlich so entscheidet, wäre ihre Sache.",
+      "Du kannst Ben direkt antworten, deine eigenen Fehler ansprechen, Unterstützung bei der Mannschaft suchen oder das Foto an die Turnierleitung schicken. Du kannst auch bis morgen warten. Die anderen haben von dem Foto bisher nichts erfahren. Eine Meldung wäre keine bloße Beschimpfung: Sie würde einen tatsächlichen Regelverstoß offenlegen, könnte aber zugleich eine Reaktion auf Bens öffentliche Bemerkung sein."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Meine Fehler anerkennen und Ben zugleich sagen, dass ich seine öffentliche Schuldzuweisung nicht akzeptiere."
+      },
+      {
+        "id": "a2",
+        "text": "Das Gespräch für heute beenden und morgen mit Ben und der Mannschaft darüber reden."
+      },
+      {
+        "id": "a3",
+        "text": "Ben sofort vor allen beschimpfen und seine eigenen Fehler aufzählen."
+      },
+      {
+        "id": "a4",
+        "text": "Das Foto mit einer sachlichen Erklärung an die Turnierleitung geben und meinen eigenen bisherigen Umgang damit offenlegen."
+      },
+      {
+        "id": "a5",
+        "text": "Das Foto mit dem erklärten Ziel melden, Ben nach seiner Bemerkung den zweiten Platz zu nehmen."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte die Niederlage und den Streit fair mit der Mannschaft klären."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte meine eigene Verantwortung anerkennen und trotzdem eine Grenze setzen."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte, dass der Regelverstoß unabhängig von unserem Streit geprüft wird."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte Ben für seine öffentliche Bemerkung einen spürbaren Nachteil zufügen."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "I",
+        "question": "Wie stark wäre der Impuls, noch im ersten Ärger eine Nachricht oder Meldung abzuschicken?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "A",
+        "question": "Wie stark möchtest du Ben nach seiner Bemerkung etwas wegnehmen, das ihm wichtig ist?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "R",
+        "question": "Wie stark würdest du es bereuen, wenn eine aus Ärger verfasste Meldung auch die übrigen Mitspieler ihren Platz kostet?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Eine Bewerbung auf deinem Schreibtisch",
+    "length": "mittel",
+    "paragraphs": [
+      "Du leitest ein kleines Team in einem Fahrradgeschäft und darfst zusammen mit der Inhaberin eine neue Verkaufskraft auswählen. Unter den Bewerbungen liegt die von Hannes, 29. Ihr wart vor zehn Jahren in derselben Abschlussklasse. Damals hat er deinen Dialekt vor anderen nachgeahmt und dich mehrmals nicht zu gemeinsamen Treffen eingeladen. Ihr habt seitdem keinen Kontakt gehabt.",
+      "Hannes hat vier Jahre Berufserfahrung, die für die Stelle passt, und eine gute Arbeitszeugnisbeschreibung. Du weißt nicht, wie er heute mit Kollegen umgeht. Im Anschreiben erwähnt er, dass ihr euch kennt, und schreibt: „Ich habe mich damals dir gegenüber schlecht verhalten. Es tut mir leid. Ich verstehe, wenn du das Gespräch nicht selbst führen möchtest.“",
+      "Es gibt zwei weitere passende Bewerbungen. Die Inhaberin kennt eure Vorgeschichte nicht und fragt nach deiner Einschätzung. Du kannst sie offen informieren, das Gespräch abgeben, Hannes selbst sachlich befragen oder dafür sorgen, dass er wegen eurer Geschichte gar nicht erst eingeladen wird. Wenn ihr ihn ablehnt, würde er den tatsächlichen Grund nur erfahren, wenn du ihn nennst."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Die Vorgeschichte offenlegen und die Inhaberin Hannes möglichst unabhängig beurteilen lassen."
+      },
+      {
+        "id": "a2",
+        "text": "Hannes ein sachliches Gespräch anbieten und seine heutige Eignung prüfen."
+      },
+      {
+        "id": "a3",
+        "text": "Die Inhaberin um eine andere Gesprächsführung bitten, weil ich keine unbefangene Einschätzung zusichern kann."
+      },
+      {
+        "id": "a4",
+        "text": "Seine Bewerbung ohne Prüfung ablehnen und die Vorgeschichte gegenüber der Inhaberin verschweigen."
+      },
+      {
+        "id": "a5",
+        "text": "Ihn einladen, um ihn im Gespräch seine frühere Überheblichkeit spüren zu lassen."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Die Stelle soll mit einer geeigneten Person besetzt werden."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte offen mit meiner Vorgeschichte umgehen und meine Grenzen berücksichtigen."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte Hannes für seine früheren Bemerkungen etwas zurückgeben."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte erleben, dass er jetzt auf meine Entscheidung angewiesen ist."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "A",
+        "question": "Wie stark wäre dein Wunsch, Hannes wegen seines früheren Verhaltens die Stelle zu verwehren?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "S",
+        "question": "Wie viel Befriedigung gäbe es dir, Hannes im Gespräch unsicher oder beschämt zu sehen?",
+        "low": "keine",
+        "high": "sehr viel"
+      },
+      {
+        "trait": "G",
+        "question": "Wie stark erwartest du, dass Hannes dir wegen deiner heutigen Position besondere Achtung zeigt?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Die Probe vor dem Chorauftritt",
+    "length": "kurz",
+    "paragraphs": [
+      "Du singst in einem Erwachsenenchor. Bei der letzten Probe vor einem Auftritt verpasst Uschi, 64, zweimal ihren Einsatz. Sie ist seit einem halben Jahr dabei, übt regelmäßig und ist vor Auftritten sichtbar nervös. Die Chorleitung sagt vor den zwanzig Mitgliedern: „Vielleicht spielen wir deinen Einsatz nächstes Mal auf einer Hupe.“ Mehrere lachen. Uschi lächelt kurz, schaut auf ihre Noten und wird rot.",
+      "Du selbst hast letzte Woche an derselben Stelle einen Fehler gemacht, allerdings ohne einen solchen Kommentar. Neben dir flüstert jemand: „Endlich trifft es mal nicht dich.“ Gleich beginnt die Stelle erneut. Du könntest weiter mitsingen, Uschi unauffällig beim Einsatz helfen, dich am Lachen beteiligen oder den Kommentar ansprechen."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Uschi unauffällig beim nächsten Einsatz helfen."
+      },
+      {
+        "id": "a2",
+        "text": "Ruhig sagen, dass der Kommentar unnötig war, und dann weiterproben."
+      },
+      {
+        "id": "a3",
+        "text": "Weiterproben und mich aus der Situation heraushalten."
+      },
+      {
+        "id": "a4",
+        "text": "Über den Kommentar lachen, ohne noch etwas hinzuzufügen."
+      },
+      {
+        "id": "a5",
+        "text": "Den Scherz aufnehmen und eine weitere Bemerkung über Uschi machen."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte Uschi unterstützen und die Probe gut fortsetzen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte die Stimmung nicht zusätzlich anspannen."
+      },
+      {
+        "id": "m3",
+        "text": "Ich bin erleichtert, dass diesmal jemand anderes im Mittelpunkt steht."
+      },
+      {
+        "id": "m4",
+        "text": "Ich finde es unterhaltsam, Uschi in diesem Moment verlegen zu sehen."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "S",
+        "question": "Wie viel Freude macht dir Uschis Verlegenheit selbst, unabhängig von der Probe?",
+        "low": "keine",
+        "high": "sehr viel"
+      },
+      {
+        "trait": "E",
+        "question": "Wie stark berührt dich, dass Uschi vor der Gruppe beschämt ist?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "V",
+        "question": "Wie stark würdest du nach diesem Vergleich befürchten, beim nächsten eigenen Fehler ebenfalls als weniger wertvoll zu gelten?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Der freie Sonntag im Krankenhaus",
+    "length": "lang",
+    "paragraphs": [
+      "Dein Vater, 67, liegt nach einer Operation noch einige Tage im Krankenhaus. Er ist ansprechbar und medizinisch versorgt, mag es aber nicht, lange allein zu sein. Deine Schwester Mara, 32, fährt seit zwei Wochen fast jeden zweiten Tag nach der Arbeit hin. Sie bringt Kleidung, kümmert sich um seine Post und bespricht Organisatorisches mit ihm. Du hast ihn in dieser Zeit einmal besucht.",
+      "Für Sonntag hast du seit längerem einen Ausflug mit drei Freunden geplant. Die Tickets kosten 55 Euro und können nicht zurückgegeben werden. Ihr wollt morgens los und abends zurück sein. Mara wusste von dem Plan und hatte zunächst gesagt, sie übernehme den Besuch. Am Samstag ruft sie dich an. Ihre Stimme klingt müde. Sie erzählt, dass sie seit Tagen schlecht schläft und den Sonntag dringend ohne zusätzliche Termine braucht.",
+      "Mara fragt dich, ob du am Sonntag für zwei Stunden zum Vater fahren und anschließend seine Wäsche in der Wohnung ablegen kannst. Das würde den Ausflug unmöglich machen. Du hattest vor zwei Wochen gesagt, dass ihr die Besuche aufteilen solltet, danach aber keinen weiteren Termin übernommen. Andere Angehörige können an diesem Wochenende nicht kommen. Wenn niemand fährt, wäre der Vater für diesen Tag ohne Familienbesuch; die medizinische Versorgung wäre weiterhin gesichert.",
+      "Die Freunde schreiben gerade in die gemeinsame Gruppe und freuen sich auf den Tag. Du könntest den Ausflug absagen, mit Mara über einen späteren Besuch reden oder bei deinem Plan bleiben. Du könntest auch einen Vorwand nennen, warum du nicht fahren kannst. Mara sagt nicht, dass du ein schlechter Mensch bist. Sie fragt konkret nach dieser einen Übernahme und wartet auf deine Antwort."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Den Ausflug absagen und Besuch sowie Wäsche übernehmen."
+      },
+      {
+        "id": "a2",
+        "text": "Mit Mara einen späteren Besuch oder eine andere konkrete Entlastung vereinbaren und prüfen, ob das für sie reicht."
+      },
+      {
+        "id": "a3",
+        "text": "Offen sagen, dass ich den Ausflug nicht absagen möchte, und akzeptieren, dass der Besuch dann möglicherweise ausfällt."
+      },
+      {
+        "id": "a4",
+        "text": "Einen beruflichen Grund erfinden, damit Mara den Besuch doch übernimmt."
+      },
+      {
+        "id": "a5",
+        "text": "Mara vorhalten, dass sie bisher sowieso alles organisiert hat und deshalb weitermachen sollte."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte Mara entlasten und meinem Vater Zeit widmen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte meine Zusage zur Aufteilung ernst nehmen."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte den seltenen Ausflug möglichst erhalten und eine andere Lösung finden."
+      },
+      {
+        "id": "m4",
+        "text": "Meine Freizeitpläne sollten in diesem Fall Vorrang vor Maras Ruhebedürfnis haben."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "E",
+        "question": "Wie stark berühren dich Maras hörbare Erschöpfung und das Alleinsein deines Vaters?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "R",
+        "question": "Wie stark würdest du es bereuen, Mara mit einem erfundenen Grund noch einmal den Besuch übernehmen zu lassen?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "G",
+        "question": "Wie stark findest du, dass dein geplanter Ausflug mehr Gewicht haben sollte als Maras freier Tag?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Ein Zimmer in einer anderen Stadt",
+    "length": "lang",
+    "paragraphs": [
+      "Dein enger Freund Amir, 27, wohnt seit vier Jahren mit dir in einer Zweier-WG. Ihr kocht häufig zusammen und geht am Donnerstagabend zum selben Sportkurs. Amir ist zuverlässig, eher ruhig und braucht manchmal etwas Zeit, bevor er größere Entscheidungen anspricht. Seit deiner Trennung vor drei Monaten habt ihr öfter gemeinsam Zeit verbracht. Du hast ihm gesagt, dass dir diese Abende gerade viel bedeuten.",
+      "Amir erzählt dir beim Frühstück, dass er einen Studienplatz in Hamburg bekommen hat. Das Programm beginnt in drei Monaten und passt zu dem Beruf, den er schon länger anstrebt. Er freut sich darüber, wirkt aber vorsichtig, als er dir die Nachricht sagt. Für das WG-Zimmer würde er mit dir zusammen rechtzeitig eine Nachfolge suchen. Er bietet an, weiter regelmäßig zu telefonieren, und möchte die kommenden Monate noch gemeinsam nutzen.",
+      "Du hattest gehofft, dass das Zusammenwohnen mindestens noch ein Jahr so bleibt. Du kennst in der Stadt einige andere Menschen, triffst sie bisher aber selten ohne Amir. Ein Ersatzmitbewohner wäre voraussichtlich zu finden; die Miete müsste also nicht dauerhaft allein von dir getragen werden. Was dich vor allem trifft, ist die Vorstellung, dass der Alltag mit Amir endet und er in Hamburg neue Menschen kennenlernen wird.",
+      "Amir fragt: „Wie geht es dir damit?“ Du kannst ehrlich von deiner Traurigkeit sprechen und seine Entscheidung trotzdem unterstützen. Du könntest auch versuchen, ihn zum Bleiben zu bewegen. Dabei könntest du deine aktuelle Einsamkeit oder mögliche Schuldgefühle ansprechen. Der Studienplatz lässt sich nicht in eure Stadt verlegen. Amir hat nicht gesagt, dass er dich weniger mag oder den Kontakt beenden will."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Ihm gratulieren, meine Traurigkeit ansprechen und ihn bei den Vorbereitungen unterstützen."
+      },
+      {
+        "id": "a2",
+        "text": "Mit ihm einen konkreten Plan für die nächsten Monate und den späteren Kontakt besprechen."
+      },
+      {
+        "id": "a3",
+        "text": "Einmal fragen, ob er seine Entscheidung noch offen sieht, und eine klare Zusage für Hamburg akzeptieren."
+      },
+      {
+        "id": "a4",
+        "text": "Ihm sagen, dass er mich nach meiner Trennung nicht allein lassen dürfe, um ihn zum Bleiben zu bewegen."
+      },
+      {
+        "id": "a5",
+        "text": "Mich demonstrativ zurückziehen und gemeinsame Abende verweigern, damit er seine Entscheidung bereut."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte die Freundschaft erhalten und seine beruflichen Ziele respektieren."
+      },
+      {
+        "id": "m2",
+        "text": "Ich brauche Raum, um meine eigene Traurigkeit und Umstellung zu bewältigen."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte den vertrauten Alltag möglichst nicht verlieren."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte erreichen, dass Amir seinen Umzug meinem Bedürfnis nach Nähe unterordnet."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "V",
+        "question": "Wie stark würdest du Amirs Umzug als Zeichen empfinden, dass du für ihn weniger wichtig bist?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "M",
+        "question": "Wie bereit wärst du, Amir mit deiner Einsamkeit Schuldgefühle zu machen, damit er bleibt?",
+        "low": "gar nicht bereit",
+        "high": "sehr bereit"
+      },
+      {
+        "trait": "K",
+        "question": "Wie wenig würden Amirs berufliche Ziele deine Versuche beeinflussen, ihn vom Umzug abzuhalten?",
+        "low": "sie würden sehr viel beeinflussen",
+        "high": "sie würden gar nichts beeinflussen"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Der Knopf und der Betrag pro Druck",
+    "length": "kurz",
+    "paragraphs": [
+      "Vor dir steht ein Knopf. Jeder Druck tötet einen zufällig ausgewählten, zu diesem Zeitpunkt lebenden Menschen irgendwo auf der Welt. Es kann eine dir unbekannte Person sein, aber auch jemand, den du kennst oder schätzt: ein Freund, ein Angehöriger oder du selbst. Du kannst weder bestimmen noch vorhersehen, wer ausgewählt wird. Bei jedem weiteren Druck wird erneut unter den noch lebenden Menschen ausgelost.",
+      "Für jeden Druck wird derselbe Geldbetrag auf dein Konto ausgezahlt. Du kannst für deine Antwort einen Betrag zwischen 10 Euro und 10 Millionen Euro pro Druck wählen. Niemand erfährt, dass du verantwortlich bist. Es gibt keine Strafverfolgung oder sonstige äußere Sanktionen. Die Todesfälle, mögliche Verluste in deinem eigenen Umfeld und deine Gefühle bleiben reale Folgen innerhalb dieses Gedankenspiels.",
+      "Wenn du selbst ausgewählt wirst, endet dein Durchlauf; bereits ausgezahltes Geld gehört zu deinem Nachlass. Gib an, ab welchem Betrag pro Druck du überhaupt dazu bereit wärst und wie oft du bei diesem Betrag insgesamt drücken wollen würdest, solange du dazu noch in der Lage bist. Du kannst auch angeben, dass du bei keinem angebotenen Betrag drücken würdest. Es besteht kein Zeitdruck."
+    ],
+    "actions": [
+      {
+        "id": "press-0",
+        "text": "Gar nicht drücken, auch nicht für 10 Millionen Euro pro Druck."
+      },
+      {
+        "id": "press-1",
+        "text": "1 Mal"
+      },
+      {
+        "id": "press-2",
+        "text": "2 Mal"
+      },
+      {
+        "id": "press-5",
+        "text": "5 Mal"
+      },
+      {
+        "id": "press-10",
+        "text": "10 Mal"
+      },
+      {
+        "id": "press-50",
+        "text": "50 Mal"
+      },
+      {
+        "id": "press-100",
+        "text": "100 Mal"
+      },
+      {
+        "id": "press-1000",
+        "text": "1.000 Mal"
+      },
+      {
+        "id": "press-50000",
+        "text": "50.000 Mal"
+      },
+      {
+        "id": "press-100000",
+        "text": "100.000 Mal"
+      },
+      {
+        "id": "press-1000000+",
+        "text": "1.000.000 Mal oder öfter"
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte keine Person töten und auch mein eigenes Leben und mein Umfeld nicht diesem Risiko aussetzen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich würde vor allem danach entscheiden, was das Geld mir oder anderen ermöglichen könnte."
+      },
+      {
+        "id": "m3",
+        "text": "Ich würde vor allem meine Grenze dafür abwägen, wie viele Todesfälle und welches persönliche Risiko ich akzeptiere."
+      },
+      {
+        "id": "m4",
+        "text": "Die Möglichkeit, über Leben und Tod zu verfügen, wäre für mich selbst reizvoll."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "E",
+        "question": "Wie stark berührt dich die Vorstellung der Menschen, die durch die Drucke sterben könnten?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "R",
+        "question": "Wie stark würdest du es bereuen, durch einen Druck einen Menschen getötet zu haben, auch wenn dir das Geld nützt?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "S",
+        "question": "Wie viel Befriedigung gäbe dir der Tod selbst, unabhängig vom Geld und davon, wer ausgewählt wird?",
+        "low": "keine",
+        "high": "sehr viel"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Die erste Schicht hinter der Theke",
+    "length": "mittel",
+    "paragraphs": [
+      "Du arbeitest seit zwei Jahren in einem Kino. Am Freitagabend ist die Schlange am Verkauf lang. Neben dir steht Finn, 21, in seiner ersten selbstständigen Schicht. Er hat die Einführung bekommen, verwechselt aber bei einer Bestellung zwei Tasten und muss den Verkauf neu beginnen. Der wartende Kunde seufzt hörbar. Finn schaut auf den Bildschirm, wird rot und sagt leise: „Ich kriege das gerade nicht hin.“",
+      "Du erinnerst dich, dass du an deinem ersten Wochenende einen ähnlichen Fehler gemacht hast. Damals hat eine Kollegin die Bestellung kurz übernommen und dir danach die Tasten erklärt. Inzwischen giltst du im Team als sicher und schnell. Eine Kollegin hinter euch sagt mit einem halben Lächeln: „Da weiß man wieder, warum wir dich hier brauchen.“ Finn kann das hören.",
+      "Du könntest Finn für zwei Minuten unterstützen. Deine eigene Schlange würde in dieser Zeit langsamer werden, und ein weiterer Kunde könnte sich beschweren. Du könntest auch einfach weiterarbeiten, die Schichtleitung rufen oder die Bemerkung der Kollegin aufnehmen. Finn hat dich bisher nicht ausdrücklich um Hilfe gebeten; er steht noch vor derselben Bestellung."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Kurz zu Finn gehen, die Bestellung gemeinsam abschließen und ihm die Tasten zeigen."
+      },
+      {
+        "id": "a2",
+        "text": "Die Schichtleitung um Unterstützung für Finn bitten und meine eigene Schlange weiter bedienen."
+      },
+      {
+        "id": "a3",
+        "text": "Finn knapp sagen, wo die richtige Taste ist, ohne meinen Platz zu verlassen."
+      },
+      {
+        "id": "a4",
+        "text": "Weiterarbeiten und warten, bis Finn selbst Hilfe anfordert."
+      },
+      {
+        "id": "a5",
+        "text": "Vor den Kunden betonen, dass ich solche Fehler längst nicht mehr mache."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte Finn in seiner ersten Schicht unterstützen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte beide Schlangen möglichst gut organisieren."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte nicht selbst die Beschwerden der Wartenden abbekommen."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte die Anerkennung für meine eigene Überlegenheit in diesem Moment genießen."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "E",
+        "question": "Wie stark berührt dich Finns sichtbare Überforderung in seiner ersten Schicht?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "V",
+        "question": "Wie stark brauchst du in diesem Moment die Bestätigung, kompetenter als Finn zu sein?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "I",
+        "question": "Wie stark wäre der Impuls, sofort einzugreifen oder etwas zu sagen, bevor du über die Wirkung nachdenkst?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Der Umschlag an der Garderobe",
+    "length": "kurz",
+    "paragraphs": [
+      "Nach einem Abend bei Freunden hast du versehentlich den Mantel von Robert, 35, mitgenommen. Zu Hause findest du darin einen Umschlag mit 80 Euro und seinen Namen. Gerade schreibt eure Gastgeberin in die Gruppe: Robert vermisse das Geld, und die Suche sei unangenehm geworden. Eine andere Besucherin, Selin, hatte früher gehen müssen; Robert fragt öffentlich, ob sie den Umschlag gesehen habe.",
+      "Robert hat dich am Abend mit einer herablassenden Bemerkung über deine Arbeit geärgert. Selin hat damit nichts zu tun. Du kannst den Irrtum sofort erklären. Du könntest aber auch schweigen, den Mantel später unauffällig zurückbringen oder eine Erklärung so formulieren, dass der Verdacht bei jemand anderem bleibt. Bisher weiß niemand, dass Mantel und Geld bei dir liegen."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Sofort in der Gruppe erklären, dass ich versehentlich Roberts Mantel samt Geld mitgenommen habe."
+      },
+      {
+        "id": "a2",
+        "text": "Robert direkt informieren und ihn bitten, den Irrtum auch in der Gruppe klarzustellen."
+      },
+      {
+        "id": "a3",
+        "text": "Mantel und Geld später zurückbringen, ohne die laufende Verdächtigung jetzt zu berichtigen."
+      },
+      {
+        "id": "a4",
+        "text": "So tun, als hätte ich den Umschlag erst später zufällig gefunden."
+      },
+      {
+        "id": "a5",
+        "text": "Die Suche eine Weile weiterlaufen lassen, damit Robert nach seiner Bemerkung ebenfalls einen unangenehmen Abend hat."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte den Irrtum aufklären und Selin nicht unter Verdacht stehen lassen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte die Sache regeln, ohne vor der ganzen Gruppe unachtsam zu wirken."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte meine eigene Rolle möglichst aus dem Gespräch heraushalten."
+      },
+      {
+        "id": "m4",
+        "text": "Ich möchte Robert für seine Bemerkung etwas zurückgeben."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "R",
+        "question": "Wie stark würdest du es bereuen, wenn Selin wegen deines Schweigens weiter verdächtigt wird?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "M",
+        "question": "Wie bereit wärst du, deine Erklärung bewusst so zu gestalten, dass deine Verantwortung verborgen bleibt?",
+        "low": "gar nicht bereit",
+        "high": "sehr bereit"
+      },
+      {
+        "trait": "A",
+        "question": "Wie stark möchtest du Roberts Unruhe als Gelegenheit nutzen, dich für seine Bemerkung zu revanchieren?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Die Gästeliste für die Dachterrasse",
+    "length": "kurz",
+    "paragraphs": [
+      "Du organisierst ein Treffen von zwölf früheren Mitschülern auf deiner Dachterrasse. Alle sind inzwischen etwa 30. Luis fragt, ob er auch kommen kann. Er ist eher still, hat in der Schulzeit selten Anschluss gefunden und war beim letzten Treffen freundlich, aber zurückhaltend. Er hat niemanden beleidigt. Es gibt genug Platz und Essen für eine weitere Person.",
+      "Zwei Personen aus der Gruppe schreiben dir privat, dass sie einen Abend „nur mit den interessanten Leuten“ möchten. Luis weiß davon nichts und bietet an, Getränke mitzubringen. Als Gastgeber entscheidest du über die Einladung. Du kannst ihn einladen, ihm absagen oder seine Anfrage in der Gruppe zur Diskussion stellen. Eine öffentliche spöttische Absage würde er ebenso sehen wie alle anderen."
+    ],
+    "actions": [
+      {
+        "id": "a1",
+        "text": "Luis einladen und den anderen sagen, dass ich ihn gern dabeihaben möchte."
+      },
+      {
+        "id": "a2",
+        "text": "Die privaten Einwände sachlich klären, ohne Luis’ Anfrage zum Anlass für Spott zu machen."
+      },
+      {
+        "id": "a3",
+        "text": "Luis absagen, weil ich den Wünschen der beiden anderen folgen möchte."
+      },
+      {
+        "id": "a4",
+        "text": "Luis mitteilen, dass er nicht gut genug in die geplante Runde passt."
+      },
+      {
+        "id": "a5",
+        "text": "Seine Anfrage mit einem spöttischen Kommentar öffentlich in die Gruppe stellen."
+      }
+    ],
+    "motives": [
+      {
+        "id": "m1",
+        "text": "Ich möchte Luis einbeziehen und einen respektvollen Abend ermöglichen."
+      },
+      {
+        "id": "m2",
+        "text": "Ich möchte eine Gruppe zusammenbringen, in der sich möglichst alle wohlfühlen."
+      },
+      {
+        "id": "m3",
+        "text": "Ich möchte als Gastgeber bestimmen, wer meinem Anspruch an die Runde genügt."
+      },
+      {
+        "id": "m4",
+        "text": "Ich fände es unterhaltsam, Luis’ Reaktion auf eine öffentliche Absage zu sehen."
+      }
+    ],
+    "axes": [
+      {
+        "trait": "G",
+        "question": "Wie stark möchtest du mit der Gästeliste zeigen, dass du über die Zugehörigkeit zu dieser Runde bestimmst?",
+        "low": "überhaupt nicht",
+        "high": "sehr stark"
+      },
+      {
+        "trait": "K",
+        "question": "Wie wenig würde Luis’ mögliche Enttäuschung deine Entscheidung beeinflussen?",
+        "low": "sie würde sehr viel beeinflussen",
+        "high": "sie würde gar nichts beeinflussen"
+      },
+      {
+        "trait": "S",
+        "question": "Wie viel Befriedigung gäbe es dir, Luis durch eine öffentliche Absage beschämt zu sehen?",
+        "low": "keine",
+        "high": "sehr viel"
+      }
+    ]
+  }
+]
